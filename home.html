@@ -10,6 +10,7 @@
     h1 {
     font-family: "Spicy Rice", sans-serif;
     font-size: 3.75em;
+    line-height: 1.2em;
     
     }
     h2 {
@@ -82,30 +83,52 @@
     }
     
     .bg {
+      box-sizing: border-box;
       width: 1200px;
+      padding: 0 50px; /*claude*/
+      padding-top: 10px;
+      padding-bottom: 30px;
       height: 1600px;
       background-color: green;
       margin: 0 auto;
-      padding: 30px;
+      text-align: center;
     }
     
     .section1content {
       background-color: blue;
-      width: 1100px;
+      height: 570px;
       border-radius: 50px;
       display: grid;
       grid-template-columns: 2fr 1fr;
       text-align: right;
-      padding: 0 30px;
+      padding: 20px;
+      margin: 20px auto;
     }
     
     .section1content img {
     display: block;
     width: auto;
-    height: 600px; /*claude*/
-    margin: 20px 0;
-/*     margin-right: auto; */
+    height: 530px; /*claude*/
+    margin: 20px 0; 
     }
+    
+    .section2content {
+    margin: 80px auto 20px;
+    height: 725px;
+    background-color: purple;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-radius: 50px;
+    text-align: left;
+    }
+    
+    .section2textbox {
+      background-color: white;
+      border-radius: 50px;
+      padding: 0 20px;
+/*       height: 550px; */
+    }
+    
   </style>
 </head>
   
@@ -123,6 +146,7 @@
      </ul></nav>
   </div>
   <div class="bg">
+    
     <div class="section1content">
       <div>
         <img src="narc.jpg" alt="placeholder2">
@@ -130,8 +154,31 @@
       <div>
       <h1>Welcome to my travel diary :3</h1>
         <h4>
-          Credentials, travelling tips and trick below. Check it out!!!
+          Credentials, travelling tips and trick below.<br> Check it out!!!
         </h4>
+      </div>
+    </div>
+    
+    <div class="section2content">
+      <div>
+        <!--w3school < -->
+      <video controls width="320" height="240" autoplay loop>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="section2textbox">
+        <div>
+        <p>
+          I’m Han, a 2nd year GBDA student at UWaterloo. I’m an addict of travelling, whether it is short trips around town, or longer ones like cross country and across the globe. Being an out-of-province student, I want to make the most of my time discover as many places as possible. My family happens to be travel gurus as well and we’re very forunate to make trips many hasn’t done before. Check out our stats as of Nov 2026!
+        </p>
+        </div>
+        <div>
+          <p>
+            we jiggle some more here
+          </p>
+        </div>
       </div>
     </div>
   </div>
